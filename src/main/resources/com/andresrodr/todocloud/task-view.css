@@ -131,3 +131,22 @@
 .scroll-bar:vertical .thumb:hover {
     -fx-background-color: derive(#4D4C4F, 10.0%);
 }
+
+.pie-chart {
+    -fx-background-color: transparent;
+}
+
+.chart-pie-label {
+    -fx-font-size: 14px;
+    -fx-fill: white; /* Color del texto */
+    -fx-background-color: transparent; /* Fondo transparente */
+}
+
+.default-color0.chart-pie {
+    -fx-pie-color: #38A0FF; /* Color para tareas completadas */
+}
+
+.default-color1.chart-pie {
+    -fx-pie-color: #FF3E3E; /* Color para tareas pendientes */
+}
+

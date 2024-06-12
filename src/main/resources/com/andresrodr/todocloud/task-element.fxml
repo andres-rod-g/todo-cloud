@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="taskElement" prefHeight="200.0" stylesheets="@task-view.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andresrodr.todocloud.TaskElementController">
+    <children>
+        <CheckBox fx:id="taskCheckBox" maxWidth="363.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="363.0" text="Test" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <ImageView fx:id="trashIcon" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="3.0">
+            <image>
+                <Image url="@trash.png" />
+            </image>
+        </ImageView>
+      <Label fx:id="taskId" text="id" visible="false" />
+    </children>
+</AnchorPane>

@@ -14,7 +14,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane stylesheets="@hello-view.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andresrodr.todocloud.HelloController">
    <children>
       <VBox alignment="CENTER" prefHeight="406.0" prefWidth="578.0" spacing="20.0" styleClass="backgroundColor">
@@ -31,21 +30,21 @@
                      <VBox minWidth="180.0" prefHeight="200.0" prefWidth="252.0">
                         <children>
                            <Label text="Email" textFill="WHITE" />
-                           <TextField promptText="name@email.com" />
+                           <TextField fx:id="userEmailField" promptText="name@email.com" />
                         </children>
                      </VBox>
                      <VBox layoutX="10.0" layoutY="10.0" minWidth="180.0" prefHeight="200.0" prefWidth="252.0">
                         <children>
                            <Label text="Email" textFill="WHITE" />
-                           <PasswordField promptText="*****" />
+                           <PasswordField fx:id="userPasswordField" promptText="*****" />
                         </children>
                      </VBox>
-                     <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" styleClass="button-primary" text="Iniciar Sesión">
+                     <Button mnemonicParsing="false" onMouseClicked="#onLoginButtonClick" prefHeight="25.0" prefWidth="198.0" styleClass="button-primary" text="Iniciar Sesión">
                         <font>
                            <Font name="System Bold" size="13.0" />
                         </font>
                      </Button>
-                     <Button layoutX="10.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="198.0" styleClass="button-secondary" text="Registrarse" />
+                     <Button layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onMouseClicked="#onRegisterButtonClick" prefHeight="25.0" prefWidth="198.0" styleClass="button-secondary" text="Registrarse" />
                   </children>
                </VBox>
             </children>
